@@ -1,7 +1,7 @@
 <?php
-namespace Test1\Hello\Controller\Index;
+namespace Test2\Hello\Controller\Index;
 
-class Test1 extends \Magento\Framework\App\Action\Action
+class Index extends \Magento\Framework\App\Action\Action
 {
 	protected $_pageFactory;
 
@@ -15,7 +15,6 @@ class Test1 extends \Magento\Framework\App\Action\Action
 
 	public function execute()
 	{
-		echo "Hello World";
-		exit;
+		return $this->_pageFactory->create();
 	}
 }
